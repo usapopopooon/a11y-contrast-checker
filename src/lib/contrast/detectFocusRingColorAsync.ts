@@ -23,7 +23,7 @@ export const detectFocusRingColorAsync = async (
   const previouslyFocused = document.activeElement;
 
   try {
-    element.focus();
+    element.focus({ preventScroll: true });
     await waitForStyleStable(element, { timeout, interval: 20, checkCount: 2 });
 
     const style = getComputedStyle(element);

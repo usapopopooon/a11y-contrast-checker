@@ -47,14 +47,14 @@ npm run dev
 
 ## スクリプト
 
-| コマンド | 説明 |
-|---------|------|
-| `npm run dev` | 開発サーバー起動 |
-| `npm run build` | プロダクションビルド |
-| `npm run lint` | ESLintチェック |
-| `npm run format` | Prettierでフォーマット |
-| `npm run test` | ユニットテスト（watchモード） |
-| `npm run test:run` | ユニットテスト（1回実行） |
-| `npm run test:coverage` | カバレッジ付きテスト |
-| `npm run test:e2e` | E2Eテスト |
-| `npm run check:all` | 全チェック実行 |
+| コマンド                | 説明                          |
+| ----------------------- | ----------------------------- |
+| `npm run dev`           | 開発サーバー起動              |
+| `npm run build`         | プロダクションビルド          |
+| `npm run lint`          | ESLintチェック                |
+| `npm run format`        | Prettierでフォーマット        |
+| `npm run test`          | ユニットテスト（watchモード） |
+| `npm run test:run`      | ユニットテスト（1回実行）     |
+| `npm run test:coverage` | カバレッジ付きテスト          |
+| `npm run test:e2e`      | E2Eテスト                     |
+| `npm run check:all`     | 全チェック実行                |
