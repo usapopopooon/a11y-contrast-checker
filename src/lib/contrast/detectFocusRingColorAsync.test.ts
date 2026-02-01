@@ -133,8 +133,44 @@ describe('detectFocusRingColorAsync', () => {
 
     await promise;
 
-    // フォーカスが元に戻ることを確認（jsdomの制限により必ずしも保証されない）
-    expect(document.activeElement).toBeDefined();
+    // body以外の要素にフォーカスがあった場合は復元される
+    expect(document.activeElement).toBe(initialButton);
+  });
+
+  it('初期フォーカスがbodyの場合はblurのみ実行', async () => {
+    const targetButton = document.createElement('button');
+    targetButton.style.outlineWidth = '2px';
+    targetButton.style.outlineStyle = 'solid';
+    targetButton.style.outlineColor = 'rgb(0, 0, 255)';
+    document.body.appendChild(targetButton);
+    // 明示的にbodyにフォーカス
+    document.body.focus();
+
+    const promise = detectFocusRingColorAsync(targetButton, { timeout: 50 });
+
+    await vi.advanceTimersByTimeAsync(100);
+
+    await promise;
+
+    // bodyへのフォーカス復元は行われず、要素はblurされる
+    expect(document.activeElement).toBe(document.body);
+  });
+
+  it('検出後に要素がblurされる', async () => {
+    const targetButton = document.createElement('button');
+    targetButton.style.outlineWidth = '2px';
+    targetButton.style.outlineStyle = 'solid';
+    targetButton.style.outlineColor = 'rgb(0, 0, 255)';
+    document.body.appendChild(targetButton);
+
+    const promise = detectFocusRingColorAsync(targetButton, { timeout: 50 });
+
+    await vi.advanceTimersByTimeAsync(100);
+
+    await promise;
+
+    // 検出後、ターゲット要素はフォーカスを持たない
+    expect(document.activeElement).not.toBe(targetButton);
   });
 
   it('空オプションでデフォルトタイムアウトを使用する', async () => {

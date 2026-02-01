@@ -56,10 +56,14 @@ export const detectFocusRingColorAsync = async (
 
     return null;
   } finally {
-    if (previouslyFocused instanceof HTMLElement) {
-      previouslyFocused.focus();
-    } else {
-      element.blur();
+    // 必ずblurしてフォーカスを解除
+    element.blur();
+    // 以前のフォーカス要素がbody以外の場合は復元
+    if (
+      previouslyFocused instanceof HTMLElement &&
+      previouslyFocused !== document.body
+    ) {
+      previouslyFocused.focus({ preventScroll: true });
     }
   }
 };
