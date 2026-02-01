@@ -11,13 +11,17 @@
     "tseslint",
     "vitejs",
     "rgba",
+    "oklch",
     "unshift",
-    "rects"
+    "rects",
+    "svgs"
   ],
   "ignorePaths": [
     "node_modules",
     "dist",
     "reports",
+    "coverage",
+    "lib/contrast-detector.js",
     "package-lock.json",
     "contrast-checker-instructions.md"
   ]

@@ -58,7 +58,9 @@ test.describe('コントラスト比チェック', () => {
       }
 
       if (uiViolations.length > 0) {
-        console.log(`--- UIコンポーネント境界線 (${uiViolations.length}件) ---`);
+        console.log(
+          `--- UIコンポーネント境界線 (${uiViolations.length}件) ---`
+        );
         for (const v of uiViolations) {
           console.log(`[FAIL] ${v.selector}`);
           console.log(`  要素: ${v.text}`);
@@ -80,7 +82,9 @@ test.describe('コントラスト比チェック', () => {
       }
 
       if (placeholderViolations.length > 0) {
-        console.log(`--- プレースホルダー (${placeholderViolations.length}件) ---`);
+        console.log(
+          `--- プレースホルダー (${placeholderViolations.length}件) ---`
+        );
         for (const v of placeholderViolations) {
           console.log(`[FAIL] ${v.selector}`);
           console.log(`  テキスト: "${v.text}"`);

@@ -1,36 +1,7 @@
 [
   {
-    "selector": "div > div.min-h-screen.bg-background > header.bg-gradient-to-r.from-violet-600 > h1.text-4xl.font-bold",
-    "text": "A11y Contrast Checker",
-    "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
-    "required": 3,
-    "fontSize": "36px",
-    "rect": {
-      "x": 24,
-      "y": 48,
-      "width": 1232,
-      "height": 40
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > header.bg-gradient-to-r.from-violet-600 > p.text-lg.opacity-90",
-    "text": "WCAG AA基準のコントラスト比をチェックするデモページ",
-    "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
-    "required": 4.5,
-    "fontSize": "18px",
-    "rect": {
-      "x": 24,
-      "y": 96,
-      "width": 1232,
-      "height": 28
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.@container/card-header.grid > div.space-y-3 > p.text-gray-400",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > p.text-gray-400",
     "text": "#9ca3af（薄いグレー）と白背景。コントラスト不足で読みにくい。",
     "color": "oklch(0.707 0.022 261.325)",
     "backgroundColor": "oklch(1 0 0)",
@@ -39,118 +10,80 @@
     "fontSize": "16px",
     "rect": {
       "x": 677,
-      "y": 794,
+      "y": 836,
       "width": 562,
       "height": 24
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.@container/card-header.grid > div.flex.flex-wrap > p.text-xs.text-amber-600",
-    "text": "グラデーション背景は検知不可（白にフォールバック）",
-    "color": "oklch(0.666 0.179 58.318)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 3.2,
-    "required": 4.5,
-    "fontSize": "12px",
-    "rect": {
-      "x": 41,
-      "y": 1051,
-      "width": 293.015625,
-      "height": 16
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6 > div.p-6.rounded-lg > h3.font-bold.text-lg",
-    "text": "深いブルーグラデーション",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.p-6.rounded-lg > span.block.font-bold",
+    "text": "グラデーション上のテキスト",
     "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
-    "required": 4.5,
-    "fontSize": "18px",
-    "rect": {
-      "x": 65,
-      "y": 1115,
-      "width": 514,
-      "height": 28
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6 > div.p-6.rounded-lg > p.text-sm.opacity-90",
-    "text": "暗い背景に白文字はOK",
-    "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
-    "required": 4.5,
-    "fontSize": "14px",
-    "rect": {
-      "x": 65,
-      "y": 1143,
-      "width": 514,
-      "height": 20
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.@container/card-header.grid > div.flex.flex-wrap > p.text-xs.text-amber-600",
-    "text": "グラデーション背景は検知不可（白にフォールバック）",
-    "color": "oklch(0.666 0.179 58.318)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 3.2,
-    "required": 4.5,
-    "fontSize": "12px",
-    "rect": {
-      "x": 677,
-      "y": 1051,
-      "width": 293.015625,
-      "height": 16
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6 > div.p-6.rounded-lg > h3.font-bold.text-lg",
-    "text": "サンセットグラデーション",
-    "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
+    "backgroundColor": "oklch(0.852 0.199 91.936)",
+    "ratio": 1.57,
     "required": 4.5,
     "fontSize": "18px",
     "rect": {
       "x": 701,
-      "y": 1115,
+      "y": 1125,
       "width": 514,
       "height": 28
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6 > div.p-6.rounded-lg > p.text-sm",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.p-6.rounded-lg > p.text-sm.opacity-90",
     "text": "黄色部分で白文字が読みにくい",
     "color": "rgb(255, 255, 255)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1,
+    "backgroundColor": "oklch(0.852 0.199 91.936)",
+    "ratio": 1.49,
     "required": 4.5,
     "fontSize": "14px",
+    "opacity": 0.9,
     "rect": {
       "x": 701,
-      "y": 1143,
+      "y": 1161,
       "width": 514,
       "height": 20
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.space-y-6 > div.bg-card.text-card-foreground > div.px-6.pt-6 > div.flex.flex-col > button.inline-flex.items-center",
-    "text": "ゴーストボタン",
-    "color": "oklch(0.872 0.01 258.338)",
-    "backgroundColor": "oklch(1 0 0)",
-    "ratio": 1.47,
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.p-6.rounded-lg > span.block.font-bold",
+    "text": "画像背景上のテキスト",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(240, 240, 240)",
+    "ratio": 1.14,
     "required": 4.5,
-    "fontSize": "14px",
+    "fontSize": "18px",
     "rect": {
-      "x": 41,
-      "y": 1530,
-      "width": 122.5,
-      "height": 36
+      "x": 701,
+      "y": 1470,
+      "width": 514,
+      "height": 28
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.space-y-6 > div.bg-card.text-card-foreground > div.px-6.pt-6 > div.flex.flex-col > div.space-y-3 > p.text-gray-300.px-4",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.p-6.rounded-lg > p.text-sm.opacity-90",
+    "text": "明るい部分で読みにくい",
+    "color": "rgb(255, 255, 255)",
+    "backgroundColor": "rgb(240, 240, 240)",
+    "ratio": 1.13,
+    "required": 4.5,
+    "fontSize": "14px",
+    "opacity": 0.9,
+    "rect": {
+      "x": 701,
+      "y": 1506,
+      "width": 514,
+      "height": 20
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > p.text-gray-300.px-4",
     "text": "薄いグレー（#d1d5db）のテキスト",
     "color": "oklch(0.872 0.01 258.338)",
     "backgroundColor": "oklch(1 0 0)",
@@ -158,29 +91,15 @@
     "required": 4.5,
     "fontSize": "14px",
     "rect": {
-      "x": 179.5,
-      "y": 1576,
-      "width": 520.703125,
+      "x": 677,
+      "y": 1791,
+      "width": 562,
       "height": 36
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.pt-6 > span.inline-flex.items-center",
-    "text": "薄いバッジ",
-    "color": "oklch(0.872 0.01 258.338)",
-    "backgroundColor": "oklch(0.967 0.003 264.542)",
-    "ratio": 1.34,
-    "required": 4.5,
-    "fontSize": "12px",
-    "rect": {
-      "x": 677,
-      "y": 1778,
-      "width": 73.40625,
-      "height": 22
-    }
-  },
-  {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.pt-6 > div.space-y-3 > p.text-gray-300.bg-gray-100",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > span.text-gray-300.bg-gray-100",
     "text": "薄いグレーのバッジテキスト",
     "color": "oklch(0.872 0.01 258.338)",
     "backgroundColor": "oklch(0.967 0.003 264.542)",
@@ -189,13 +108,14 @@
     "fontSize": "14px",
     "rect": {
       "x": 677,
-      "y": 1862,
+      "y": 2068,
       "width": 184.0625,
       "height": 28
     }
   },
   {
-    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.space-y-3 > p.text-gray-300.font-medium",
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > span.text-gray-300.font-medium",
     "text": "パスワード（読みにくい）",
     "color": "oklch(0.872 0.01 258.338)",
     "backgroundColor": "oklch(1 0 0)",
@@ -204,9 +124,492 @@
     "fontSize": "14px",
     "rect": {
       "x": 677,
-      "y": 2135,
+      "y": 2341,
+      "width": 155.125,
+      "height": 17
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "下線なしの場合、周囲テキストと3:1以上必要",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 967.453125,
+      "y": 3761,
+      "width": 243.1875,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "フォーカス時のみ表示",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 322.3125,
+      "y": 4046,
+      "width": 126.8125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "フォーカス時のみ表示",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 967.46875,
+      "y": 4046,
+      "width": 126.8125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > p.text-red-300.text-sm",
+    "text": "このエラーメッセージは読みにくい",
+    "color": "oklch(0.808 0.114 19.571)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.92,
+    "required": 4.5,
+    "fontSize": "14px",
+    "rect": {
+      "x": 677,
+      "y": 4402,
       "width": 562,
       "height": 20
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > p",
+    "text": "半透明の黒テキスト（30%不透明度）",
+    "color": "rgba(0, 0, 0, 0.3)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 2.1,
+    "required": 4.5,
+    "fontSize": "16px",
+    "rect": {
+      "x": 677,
+      "y": 4663,
+      "width": 562,
+      "height": 24
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > p.text-gray-900.opacity-30",
+    "text": "opacity: 0.3 のテキスト",
+    "color": "oklch(0.21 0.034 264.665)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.95,
+    "required": 4.5,
+    "fontSize": "16px",
+    "opacity": 0.3,
+    "rect": {
+      "x": 677,
+      "y": 4964,
+      "width": 562,
+      "height": 24
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "疑似要素のコントラストは検知が難しい場合あり",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 327.734375,
+      "y": 5228,
+      "width": 259.78125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "疑似要素のコントラストは検知が難しい場合あり",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 967.625,
+      "y": 5228,
+      "width": 259.78125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "CSSフィルターの影響は警告として検出",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 330.1875,
+      "y": 5493,
+      "width": 217.171875,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "CSSフィルターの影響は警告として検出",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 966.59375,
+      "y": 5493,
+      "width": 217.171875,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "ブレンドモードの影響は警告として検出",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 335.8125,
+      "y": 5794,
+      "width": 215.453125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "ブレンドモードの影響は警告として検出",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 966.296875,
+      "y": 5794,
+      "width": 215.453125,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.bg-gray-200.p-4 > p.text-gray-500",
+    "text": "screen ブレンドモードのテキスト",
+    "color": "oklch(0.551 0.027 264.364)",
+    "backgroundColor": "oklch(0.928 0.006 264.531)",
+    "ratio": 3.91,
+    "required": 4.5,
+    "fontSize": "16px",
+    "rect": {
+      "x": 693,
+      "y": 5847,
+      "width": 530,
+      "height": 24
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "無効状態はWCAG免除。ただしユーザビリティ的には配慮推奨",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 41,
+      "y": 6156,
+      "width": 329.265625,
+      "height": 16
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > button.px-4.py-2",
+    "text": "無効なボタン",
+    "color": "oklch(0.707 0.022 261.325)",
+    "backgroundColor": "oklch(0.967 0.003 264.542)",
+    "ratio": 2.36,
+    "required": 4.5,
+    "fontSize": "16px",
+    "rect": {
+      "x": 41,
+      "y": 6188,
+      "width": 122.65625,
+      "height": 42
+    }
+  },
+  {
+    "type": "text",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.flex-wrap > span.text-xs.text-amber-600",
+    "text": "無効状態はWCAG免除。ただしユーザビリティ的には配慮推奨",
+    "color": "oklch(0.666 0.179 58.318)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.2,
+    "required": 4.5,
+    "fontSize": "12px",
+    "rect": {
+      "x": 677,
+      "y": 6156,
+      "width": 329.265625,
+      "height": 16
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "input",
+    "color": "oklch(0.928 0.006 264.531)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.24,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 2875,
+      "width": 562,
+      "height": 44
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "input",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.26,
+    "required": 3,
+    "rect": {
+      "x": 41,
+      "y": 3515,
+      "width": 562,
+      "height": 42
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "input",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.26,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 3515,
+      "width": 562,
+      "height": 42
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > button.px-4.py-2",
+    "text": "button",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "ratio": 1.26,
+    "required": 3,
+    "rect": {
+      "x": 41,
+      "y": 4083,
+      "width": 181.75,
+      "height": 42
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > button.px-4.py-2",
+    "text": "button",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "rgb(255, 255, 255)",
+    "ratio": 1.26,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 4083,
+      "width": 285.15625,
+      "height": 42
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > button.px-4.py-2",
+    "text": "button",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "oklch(0.967 0.003 264.542)",
+    "ratio": 1.14,
+    "required": 3,
+    "rect": {
+      "x": 41,
+      "y": 6188,
+      "width": 122.65625,
+      "height": 42
+    }
+  },
+  {
+    "type": "ui-border",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "input",
+    "color": "oklch(0.922 0 0)",
+    "backgroundColor": "oklch(0.967 0.003 264.542)",
+    "ratio": 1.14,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 6188,
+      "width": 562,
+      "height": 42
+    }
+  },
+  {
+    "type": "icon-stroke",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.inline-block > svg",
+    "text": "SVG icon",
+    "color": "oklch(0.872 0.01 258.338)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.47,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 3160,
+      "width": 24,
+      "height": 24
+    }
+  },
+  {
+    "type": "icon-stroke",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.gap-4 > svg",
+    "text": "SVG icon",
+    "color": "oklch(0.872 0.01 258.338)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.47,
+    "required": 3,
+    "rect": {
+      "x": 677,
+      "y": 3214,
+      "width": 24,
+      "height": 24
+    }
+  },
+  {
+    "type": "icon-stroke",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.gap-4 > svg",
+    "text": "SVG icon",
+    "color": "oklch(0.872 0.01 258.338)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.47,
+    "required": 3,
+    "rect": {
+      "x": 717,
+      "y": 3214,
+      "width": 24,
+      "height": 24
+    }
+  },
+  {
+    "type": "icon-stroke",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > div.flex.gap-4 > svg",
+    "text": "SVG icon",
+    "color": "oklch(0.872 0.01 258.338)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.47,
+    "required": 3,
+    "rect": {
+      "x": 757,
+      "y": 3214,
+      "width": 24,
+      "height": 24
+    }
+  },
+  {
+    "type": "placeholder",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "濃いグレーの境界線",
+    "color": "oklab(0.145 0 0 / 0.5)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.74,
+    "required": 4.5,
+    "rect": {
+      "x": 41,
+      "y": 2875,
+      "width": 562,
+      "height": 44
+    }
+  },
+  {
+    "type": "placeholder",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "薄いグレーの境界線",
+    "color": "oklab(0.145 0 0 / 0.5)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 3.74,
+    "required": 4.5,
+    "rect": {
+      "x": 677,
+      "y": 2875,
+      "width": 562,
+      "height": 44
+    }
+  },
+  {
+    "type": "placeholder",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > input.w-full.px-3",
+    "text": "gray-300のプレースホルダー（読みにくい）",
+    "color": "oklch(0.872 0.01 258.338)",
+    "backgroundColor": "oklch(1 0 0)",
+    "ratio": 1.47,
+    "required": 4.5,
+    "rect": {
+      "x": 677,
+      "y": 3515,
+      "width": 562,
+      "height": 42
+    }
+  },
+  {
+    "type": "link-distinction",
+    "selector": "div > div.min-h-screen.bg-background > main.container.mx-auto > section > div.grid.md:grid-cols-2 > div.bg-card.text-card-foreground > div.px-6.space-y-4 > a.text-gray-600.no-underline",
+    "text": "下線なしリンク",
+    "color": "oklch(0.446 0.03 256.802)",
+    "backgroundColor": "oklch(0.145 0 0)",
+    "ratio": 2.62,
+    "required": 3,
+    "note": "下線なしで周囲テキストと区別不足",
+    "rect": {
+      "x": 677,
+      "y": 3801,
+      "width": 103.421875,
+      "height": 18
     }
   }
 ]

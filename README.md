@@ -1,6 +1,17 @@
-# React + TypeScript + Vite
+# A11y Contrast Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![CI](https://github.com/usapopopooon/a11y-contrast-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/usapopopooon/a11y-contrast-checker/actions/workflows/ci.yml)
+[![codecov](https://codecov.io/gh/usapopopooon/a11y-contrast-checker/graph/badge.svg)](https://codecov.io/gh/usapopopooon/a11y-contrast-checker)
+
+WCAG 2.1 AA基準のコントラスト比をチェックするデモアプリケーション。
+
+## Tech Stack
+
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS v4
+- Vitest (Unit Tests)
+- Playwright (E2E Tests)
 
 Currently, two official plugins are available:
 
