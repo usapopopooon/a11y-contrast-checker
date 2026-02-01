@@ -3,9 +3,22 @@
 [![CI](https://github.com/usapopopooon/a11y-contrast-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/usapopopooon/a11y-contrast-checker/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/usapopopooon/a11y-contrast-checker/graph/badge.svg)](https://codecov.io/gh/usapopopooon/a11y-contrast-checker)
 
-WCAG 2.1 AA基準のコントラスト比をチェックするデモアプリケーション。
+**Demo:** https://usapopopooon.github.io/a11y-contrast-checker/
 
-## Tech Stack
+## 概要
+
+WCAG 2.1 AA基準のコントラスト比をチェックするデモアプリケーションです。
+
+様々なUIコンポーネントのコントラスト比を自動検出し、アクセシビリティ基準を満たしているかを視覚的に確認できます。
+
+### 主な機能
+
+- テキスト、アイコン、ボタン、フォーム要素のコントラスト比検出
+- グラデーション背景、半透明色、フォーカスリングの検出
+- WCAG 2.1 AA基準（4.5:1 / 3:1）での判定
+- E2Eテストによる自動コントラスト比チェック
+
+## 技術スタック
 
 - React 19 + TypeScript
 - Vite
@@ -13,72 +26,35 @@ WCAG 2.1 AA基準のコントラスト比をチェックするデモアプリケ
 - Vitest (Unit Tests)
 - Playwright (E2E Tests)
 
-Currently, two official plugins are available:
+## 開発環境
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js 20以上
+- npm 10以上
 
-## React Compiler
+## セットアップ
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+# リポジトリをクローン
+git clone https://github.com/usapopopooon/a11y-contrast-checker.git
+cd a11y-contrast-checker
 
-## Expanding the ESLint configuration
+# 依存関係をインストール
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
+# 開発サーバーを起動
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## スクリプト
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+| コマンド | 説明 |
+|---------|------|
+| `npm run dev` | 開発サーバー起動 |
+| `npm run build` | プロダクションビルド |
+| `npm run lint` | ESLintチェック |
+| `npm run format` | Prettierでフォーマット |
+| `npm run test` | ユニットテスト（watchモード） |
+| `npm run test:run` | ユニットテスト（1回実行） |
+| `npm run test:coverage` | カバレッジ付きテスト |
+| `npm run test:e2e` | E2Eテスト |
+| `npm run check:all` | 全チェック実行 |
