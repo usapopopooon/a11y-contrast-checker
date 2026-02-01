@@ -16,6 +16,8 @@ jobs:
   ci:
     name: CI
     runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.52.0-noble
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -24,7 +26,6 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
@@ -52,9 +53,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: usapopopooon/a11y-contrast-checker
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
 
       - name: Run E2E tests
         run: npm run test:e2e
